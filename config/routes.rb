@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'pages/feedback'
+  post 'pages/feedback' => 'pages#process_feedback'
+
   devise_for :users
   resources :comments
   get 'pages/info'

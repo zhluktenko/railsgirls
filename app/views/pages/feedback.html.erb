@@ -1,0 +1,8 @@
+<h1>Feedback</h1>
+<%= form_tag("/pages/feedback", method: "post") do %>
+  <%= label_tag("Name:") %>
+  <br />
+  <%= text_field_tag(:name) %>
+  <br />
+  <%= submit_tag("Send") %>
+<% end %>

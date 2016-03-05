@@ -7,6 +7,9 @@ gem 'rails', '4.2.5.2'
 group :development do
   gem 'sqlite3'
 end
+group :development, :test do
+  gem 'jazz_fingers'
+end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
